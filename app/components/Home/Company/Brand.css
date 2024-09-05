@@ -1,0 +1,64 @@
+.carousel-wrapper {
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    gap: 20px;
+    /* Adjust the gap value to control the space between items */
+}
+
+.carousel-container-1 {
+    animation: scroll-left 25s infinite;
+}
+
+.carousel-container-2 {
+    animation: scroll-right 25s infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-40%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(40%);
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(-200%);
+        }
+    }
+
+    @keyframes scroll-right {
+        0% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(200%);
+        }
+    }
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+}

@@ -1,0 +1,8 @@
+.bg {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+.bg:active {
+  color: brown;
+}
