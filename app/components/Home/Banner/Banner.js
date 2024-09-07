@@ -6,6 +6,7 @@ import img3 from "@/public/assets/banner/banner3.png";
 import ProfileCard from "../Profile/MDProfile";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import "animate.css";
 
 const Banner = () => {
   return (
@@ -68,7 +69,7 @@ const Banner = () => {
             <div class="absolute inset-0 bg-black opacity-75">
               <img
                 class="object-cover w-full h-full"
-                src='https://i.postimg.cc/WbsmRGqL/banner3.png'
+                src="https://i.postimg.cc/WbsmRGqL/banner3.png"
                 alt="Construction"
               />
             </div>
@@ -80,7 +81,7 @@ const Banner = () => {
                     <span>Farees Construction Limited (FCL)</span>
                   </h1>
                   <p class="mt-6 tracking-tighter text-white">
-                    <span class=" font-normal text-3xl md:text-4xl lg:text-5xl">
+                    <span class="animate__animated animate__bounce font-normal text-3xl md:text-4xl lg:text-5xl">
                       <strong>For a Green Future with Trust and Quality</strong>
                     </span>
                   </p>
