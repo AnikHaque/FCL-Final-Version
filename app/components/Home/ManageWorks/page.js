@@ -7,7 +7,7 @@ const ManageWorks = () => {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div>
             <div className="mt-14">
-              <h1 className="font-bold text-3xl lg:text-4xl">
+              <h1 className="font-bold text-2xl lg:text-4xl">
                 See How We Manage Our <br className="hidden lg:block"></br>
                 <span className="text-green-800"> Works</span>
               </h1>

@@ -1,14 +1,14 @@
 // 'use client';
 // import React from "react";
-// import Image from "next/image";
+// 
 // import img2 from "@/public/assets/banner/constraction.jpeg";
 // import Link from "next/link";
 
 // const ITEMS_PER_PAGE = 6; // Number of items to display per page
 
-// const equipmentImages = [
+// const equipmentimgs = [
 //   {
-//     src: "https://fclweb.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F50TCrane.107b7a02.jpg&w=3840&q=75",
+//     src: "https://fclweb.netlify.app/_next/img?url=%2F_next%2Fstatic%2Fmedia%2F50TCrane.107b7a02.jpg&w=3840&q=75",
 //     alt: "50T Mobile Crane (wheel type)",
 //   },
 //   {
@@ -39,19 +39,19 @@
 //     src: "https://i.postimg.cc/x8tZvvrZ/Vibro-roller.jpg",
 //     alt: "Vibro-roller",
 //   },
-//   // Add more image objects as needed
+//   // Add more img objects as needed
 // ];
 
 // const PhotoEquipment = () => {
 //   const [currentPage, setCurrentPage] = React.useState(1);
 
-//   const paginatedImages = React.useMemo(() => {
+//   const paginatedimgs = React.useMemo(() => {
 //     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-//     const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, equipmentImages.length);
-//     return equipmentImages.slice(startIndex, endIndex);
-//   }, [currentPage, equipmentImages]);
+//     const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, equipmentimgs.length);
+//     return equipmentimgs.slice(startIndex, endIndex);
+//   }, [currentPage, equipmentimgs]);
 
-//   const totalPages = Math.ceil(equipmentImages.length / ITEMS_PER_PAGE);
+//   const totalPages = Math.ceil(equipmentimgs.length / ITEMS_PER_PAGE);
 
 //   const handlePageChange = (pageNumber) => {
 //     setCurrentPage(pageNumber);
@@ -61,7 +61,7 @@
 //     <div>
 //       <section className="relative bg-gray-800 text-white">
 //         <div className="relative">
-//           <Image
+//           <img
 //             src={img2}
 //             alt="Banner"
 //             className="object-cover w-full h-64 bg-black opacity-5"
@@ -135,19 +135,19 @@
 //         <section className="py-6">
 //           <div className="container mx-auto mt-10">
 //             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-//               {paginatedImages.map((image, index) => (
+//               {paginatedimgs.map((img, index) => (
 //                 <div
 //                   key={index}
 //                   className="relative group overflow-hidden rounded-lg shadow-lg "
 //                 >
 //                   <img
 //                     className="object-cover w-full h-80 transition-transform duration-300 transform group-hover:scale-110"
-//                     src={image.src}
-//                     alt={image.alt}
+//                     src={img.src}
+//                     alt={img.alt}
 //                   />
 //                   <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
 //                     <p className="text-xl font-extrabold text-white">
-//                       {image.alt}
+//                       {img.alt}
 //                     </p>
 //                   </div>
 //                 </div>
@@ -180,15 +180,15 @@
 // components/PhotoEquipment.js
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
+
 import img2 from "@/public/assets/banner/constraction.jpeg";
 import Link from "next/link";
 import Pagination from "../components/pagination/page";
 
 
-const equipmentImages = [
+const equipmentimgs = [
   {
-        src: "https://fclweb.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F50TCrane.107b7a02.jpg&w=3840&q=75",
+        src: "https://fclweb.netlify.app/_next/img?url=%2F_next%2Fstatic%2Fmedia%2F50TCrane.107b7a02.jpg&w=3840&q=75",
         alt: "50T Mobile Crane (wheel type)",
       },
       {
@@ -223,17 +223,17 @@ const equipmentImages = [
 
 const PhotoEquipment = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const imagesPerPage = 6;
+  const imgsPerPage = 6;
 
-  // Calculate the current images to display
-  const indexOfLastImage = currentPage * imagesPerPage;
-  const indexOfFirstImage = indexOfLastImage - imagesPerPage;
-  const currentImages = equipmentImages.slice(
-    indexOfFirstImage,
-    indexOfLastImage
+  // Calculate the current imgs to display
+  const indexOfLastimg = currentPage * imgsPerPage;
+  const indexOfFirstimg = indexOfLastimg - imgsPerPage;
+  const currentimgs = equipmentimgs.slice(
+    indexOfFirstimg,
+    indexOfLastimg
   );
 
-  const totalPages = Math.ceil(equipmentImages.length / imagesPerPage);
+  const totalPages = Math.ceil(equipmentimgs.length / imgsPerPage);
 
   // Handle page change
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
@@ -242,7 +242,7 @@ const PhotoEquipment = () => {
     <div>
       <section className="relative bg-gray-800 text-white">
         <div className="relative">
-          <Image
+          <img
             src={img2}
             alt="Banner"
             className="object-cover w-full h-64 bg-black opacity-5"
@@ -316,19 +316,19 @@ const PhotoEquipment = () => {
         <section className="py-6">
           <div className="container mx-auto mt-10">
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {currentImages.map((image, index) => (
+              {currentimgs.map((img, index) => (
                 <div
                   key={index}
                   className="relative group overflow-hidden rounded-lg shadow-lg "
                 >
                   <img
                     className="object-cover w-full h-80 transition-transform duration-300 transform group-hover:scale-110"
-                    src={image.src}
-                    alt={image.alt}
+                    src={img.src}
+                    alt={img.alt}
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
                     <p className="text-xl font-extrabold text-white">
-                      {image.alt}
+                      {img.alt}
                     </p>
                   </div>
                 </div>

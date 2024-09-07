@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
+import img from 'next/img';
 import img1 from '@/public/assets/banner/constraction.jpeg'; // Adjust the path if needed
 import Link from 'next/link';
 
@@ -63,7 +63,7 @@ const JobDetails = () => {
       {/* Hero Section */}
       <section className="relative bg-gray-800 text-white">
         <div className="relative">
-          <Image
+          <img
             src={img1}
             alt="Banner"
             className="object-cover w-full h-64 bg-black opacity-50"

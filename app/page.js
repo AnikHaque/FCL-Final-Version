@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Banner from "./components/Home/Banner/Banner";
 import Statistic from "./components/Home/Satistics/Satistics";
 import Company from "./components/Home/Company/Company";

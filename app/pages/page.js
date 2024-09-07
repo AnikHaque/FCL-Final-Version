@@ -1,6 +1,6 @@
 // Updated CareerPage component
 import React from "react";
-import Image from "next/image";
+
 import img1 from "@/public/assets/banner/constraction.jpeg";
 import Link from "next/link";
 
@@ -37,7 +37,7 @@ const CareerPage = () => {
       {/* Hero Section */}
       <section className="relative bg-gray-800 text-white">
         <div className="relative">
-          <Image
+          <img
             src={img1}
             alt="Banner"
             className="object-cover w-full h-64 bg-black opacity-50"

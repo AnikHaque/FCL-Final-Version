@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import React from "react";
 import img1 from "@/public/assets/banner/constraction.jpeg";
 import govedCertificate from "@/public/assets/certificats/goved.jpeg";
@@ -9,7 +9,7 @@ const Certificates = () => {
       <div className="relative -top-20">
         <div class="relative pt-48 pb-12 bg-black xl:pt-60 sm:pb-16 lg:pb-32 xl:pb-48 2xl:pb-56">
           <div class="absolute inset-0 bg-black opacity-70">
-            <Image
+            <img
               class="relative object-cover w-full h-full"
               src={img1}
               alt="Construction"
@@ -22,11 +22,11 @@ const Certificates = () => {
           Certificates
         </h2>
         <div>
-          <Image
+          <img
             src={govedCertificate}
             className="min-w-[900px]"
             alt="Organogram"
-          ></Image>
+          ></img>
         </div>
       </div>
     </div>

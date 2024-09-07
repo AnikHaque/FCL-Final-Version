@@ -3,7 +3,7 @@ import React from "react";
 const Blog = () => {
   return (
     <div className="bg-state-50 mt-20 mb-20">
-      <h2 class="text-3xl text-center mt-10 mb-10 font-bold leading-tight text-black sm:text-4xl lg:text-4xl">
+      <h2 class="text-2xl text-center mt-10 mb-10 font-bold leading-tight text-black sm:text-4xl lg:text-4xl">
         Recent Activities
       </h2>
       <div className="px-4 lg:container lg:mx-auto lg:max-w-[1300px]">
@@ -82,7 +82,7 @@ const Blog = () => {
           </div>
           <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
             <img
-              src="https://i.postimg.cc/dtKLsYHy/Whats-App-Image-2021-06-06-at-07-26-18.jpg"
+              src="https://i.postimg.cc/dtKLsYHy/Whats-App-img-2021-06-06-at-07-26-18.jpg"
               className="object-cover w-full h-64"
               alt=""
             />

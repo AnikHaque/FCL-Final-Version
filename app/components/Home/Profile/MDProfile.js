@@ -1,6 +1,6 @@
 import React from "react";
 import photo from "@/public/assets/MD_profile/Brigadier General AKM Mahfuzul Haque.png";
-import Image from "next/image";
+
 
 const ProfileCard = () => {
   return (

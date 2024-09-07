@@ -1,5 +1,5 @@
 'use client'
-import Image from "next/image";
+
 import React, { useState } from "react";
 import img1 from "@/public/assets/banner/constraction.jpeg";
 import { TbTargetArrow } from "react-icons/tb";
@@ -165,7 +165,7 @@ const Page = () => {
 
                   <img
                     className="absolute -top-4 -left-12"
-                    src="https://cdn.rareblocks.xyz/collection/celebration/images/features/1/wavey-lines.svg"
+                    src="https://cdn.rareblocks.xyz/collection/celebration/imgs/features/1/wavey-lines.svg"
                     alt=""
                   />
 

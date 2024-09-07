@@ -1,34 +1,30 @@
-"use client";
+'use client';
 
 import React, { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import Pagination from "../components/pagination/page";
 
-// Define your images data array
-const imagesData = [
-  { id: 1, src: 'https://i.postimg.cc/7PSSMXjS/FCL-Brochure-2.jpg', alt: "Image 1" },
-  { id: 2, src: 'https://i.postimg.cc/httxnnv0/2.jpg', alt: "Image 2" },
-  { id: 6, src: 'https://i.postimg.cc/7PSSMXjS/FCL-Brochure-2.jpg', alt: "Image 6" },
-  { id: 7, src: 'https://i.postimg.cc/7PSSMXjS/FCL-Brochure-2.jpg', alt: "Image 7" },
-  { id: 8, src: 'https://i.postimg.cc/7PSSMXjS/FCL-Brochure-2.jpg', alt: "Image 8" },
-  { id: 9, src: 'https://i.postimg.cc/7PSSMXjS/FCL-Brochure-2.jpg', alt: "Image 9" },
-  { id: 10, src: 'https://i.postimg.cc/7PSSMXjS/FCL-Brochure-2.jpg', alt: "Image 10" },
-  // Add more images if needed
+const imgsData = [
+  { id: 1, src: 'https://i.postimg.cc/7PSSMXjS/FCL-Brochure-2.jpg', alt: "img 1" },
+  { id: 2, src: 'https://i.postimg.cc/httxnnv0/2.jpg', alt: "img 2" },
+  { id: 6, src: 'https://i.postimg.cc/7PSSMXjS/FCL-Brochure-2.jpg', alt: "img 6" },
+  { id: 7, src: 'https://i.postimg.cc/7PSSMXjS/FCL-Brochure-2.jpg', alt: "img 7" },
+  { id: 8, src: 'https://i.postimg.cc/7PSSMXjS/FCL-Brochure-2.jpg', alt: "img 8" },
+  { id: 9, src: 'https://i.postimg.cc/7PSSMXjS/FCL-Brochure-2.jpg', alt: "img 9" },
+  { id: 10, src: 'https://i.postimg.cc/7PSSMXjS/FCL-Brochure-2.jpg', alt: "img 10" },
+  // Add more imgs if needed
 ];
 
 const CSR = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const imagesPerPage = 4; // Number of images to display per page
-  const totalPages = Math.ceil(imagesData.length / imagesPerPage);
+  const imgsPerPage = 4;
+  const totalPages = Math.ceil(imgsData.length / imgsPerPage);
 
-  // Calculate start and end index based on the current page
-  const startIndex = (currentPage - 1) * imagesPerPage;
-  const currentImages = imagesData.slice(startIndex, startIndex + imagesPerPage);
+  const startIndex = (currentPage - 1) * imgsPerPage;
+  const currentimgs = imgsData.slice(startIndex, startIndex + imgsPerPage);
 
-  const handlePageChange = (newPage) => {
-    if (newPage > 0 && newPage <= totalPages) {
-      setCurrentPage(newPage);
-    }
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
   };
 
   return (
@@ -36,7 +32,7 @@ const CSR = () => {
       <section className="relative bg-gray-800 text-white">
         <div className="relative">
           <img
-            src='https://png.pngtree.com/thumb_back/fh260/background/20230515/pngtree-construction-site-with-cranes-in-the-field-image_2541656.jpg'
+            src='https://png.pngtree.com/thumb_back/fh260/background/20230515/pngtree-construction-site-with-cranes-in-the-field-img_2541656.jpg'
             alt="Banner"
             className="object-cover w-full h-64 bg-black opacity-5"
           />
@@ -88,47 +84,25 @@ const CSR = () => {
 
       <section className="py-6">
         <div className="lg:container grid grid-cols-2 gap-4 p-4 lg:mx-auto lg:max-w-[1300px] md:grid-cols-4">
-          {currentImages.map((image) => (
+          {currentimgs.map((img) => (
             <img
-              key={image.id}
-              src={image.src}
-              alt={image.alt}
+              key={img.id}
+              src={img.src}
+              alt={img.alt}
               className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
             />
           ))}
         </div>
+
         {/* Pagination controls */}
-        <div className="flex justify-center gap-4 mt-8">
-          <button
-            onClick={() => handlePageChange(currentPage - 1)}
-            disabled={currentPage === 1}
-            className="p-2 border rounded bg-gray-200 text-gray-800"
-          >
-            Previous
-          </button>
-          {Array.from({ length: totalPages }, (_, index) => (
-            <button
-              key={index}
-              onClick={() => handlePageChange(index + 1)}
-              className={`p-2 border rounded ${
-                currentPage === index + 1 ? 'bg-green-500 text-white' : 'bg-gray-200 text-gray-800'
-              }`}
-            >
-              {index + 1}
-            </button>
-          ))}
-          <button
-            onClick={() => handlePageChange(currentPage + 1)}
-            disabled={currentPage === totalPages}
-            className="p-2 border rounded bg-gray-200 text-gray-800"
-          >
-            Next
-          </button>
-        </div>
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          paginate={handlePageChange}
+        />
       </section>
     </div>
   );
 };
 
 export default CSR;
-

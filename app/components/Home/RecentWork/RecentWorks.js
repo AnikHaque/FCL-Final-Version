@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import React from "react";
 import POS from "@/public/assets/recentWorks/POS.png";
 import DS from "@/public/assets/recentWorks/D&S.jpg";
@@ -8,20 +8,20 @@ import UN from "@/public/assets/recentWorks/UN.jpg";
 import constraction from "@/public/assets/recentWorks/constraction1.jpg";
 
 const RecentWorks = () => {
-  const imageHeight = 300;
+  const imgHeight = 300;
 
   return (
     <div className="py-20 container mx-auto max-w-[1300px]" id="recent-works">
       <div className="mx-5 lg:container lg:mx-auto">
         <div>
-          <h2 class="text-3xl text-center font-bold leading-tight mb-10 text-black sm:text-4xl lg:text-4xl">
+          <h2 class="text-2xl text-center font-bold leading-tight mb-10 text-black sm:text-4xl lg:text-4xl">
             Recent Works
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 rounded">
           <div className="relative h-[300px] overflow-hidden rounded-md">
-            <Image
-              src={POS}
+          <img
+              src="https://fclweb.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FPOS.36e2fcb0.png&w=1920&q=75"
               alt="PSO Banglow, Dhaka Cantonment."
               layout="fill"
               objectFit="cover"
@@ -42,8 +42,8 @@ const RecentWorks = () => {
             </div>
           </div>
           <div className="relative h-[300px] overflow-hidden rounded-md">
-            <Image
-              src={road}
+          <img
+              src="https://i.postimg.cc/tC810NXt/road.jpg"
               alt="7.5 km Flexible Road’s Pavement"
               layout="fill"
               objectFit="cover"
@@ -64,8 +64,8 @@ const RecentWorks = () => {
             </div>
           </div>
           <div className="relative h-[300px] overflow-hidden rounded-md">
-            <Image
-              src={DS}
+          <img
+              src="https://i.postimg.cc/J02szbj8/D-S.jpg"
               alt="Jolshiri Drainage & Swerege Network"
               layout="fill"
               objectFit="cover"
@@ -86,8 +86,8 @@ const RecentWorks = () => {
             </div>
           </div>
           <div className="relative h-[300px] overflow-hidden rounded-md">
-            <Image
-              src={NPB}
+          <img
+              src="https://i.postimg.cc/90M42xR1/NPB.jpg"
               alt="Construction of Non-Process Building (NPB)"
               layout="fill"
               objectFit="cover"
@@ -108,8 +108,8 @@ const RecentWorks = () => {
             </div>
           </div>
           <div className="relative h-[300px] overflow-hidden rounded-md">
-            <Image
-              src={constraction}
+          <img
+              src="https://i.postimg.cc/9FD4NnjQ/constraction1.jpg"
               alt="Raw Water Flow Measurement Chamber"
               layout="fill"
               objectFit="cover"
@@ -130,8 +130,8 @@ const RecentWorks = () => {
             </div>
           </div>
           <div className="relative h-[300px] overflow-hidden rounded-md">
-            <Image
-              src={UN}
+          <img
+              src="https://i.postimg.cc/9FD4NnjQ/constraction1.jpg"
               alt="UN Vehicle Repair Shed"
               layout="fill"
               objectFit="cover"

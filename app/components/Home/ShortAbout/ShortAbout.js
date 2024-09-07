@@ -2,7 +2,7 @@ import Link from "next/link";
 import house from "@/public/assets/shortAbout/house.jpg";
 import road from "@/public/assets/shortAbout/road.jpeg";
 import cons from "@/public/assets/shortAbout/cons.jpg";
-import Image from "next/image";
+
 
 const ShortAbout = () => {
   return (
@@ -26,9 +26,14 @@ const ShortAbout = () => {
           </div>
 
           <div>
-            <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+            <h2 class="hidden lg:block font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
               Farees Construction <br /> Limited (FCL)
             </h2>
+
+            <h2 class="lg:hidden text-2xl font-bold leading-tight text-black mt-4 ">
+              Farees Construction Limited (FCL)
+            </h2>
+
             <p class="mt-4 text-base leading-relaxed text-gray-600 text-justify">
               <strong>FAREES CONSTRUCTION LIMITED (FCL)</strong> is an
               independent engineering construction company with an objective to
@@ -41,7 +46,7 @@ const ShortAbout = () => {
               Limited, to serve the nation with top-quality professionals.
             </p>
             <br></br>
-            <p className="text-base leading-relaxed text-gray-600 text-justify">
+            <p className="hidden lg:block text-base leading-relaxed text-gray-600 text-justify">
               <strong>FCL</strong> consists of a professionals, experts in the
               development sectors, and experienced management. The organization
               have launched country-wide nation-building activities by

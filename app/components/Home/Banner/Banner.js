@@ -3,7 +3,6 @@ import React from "react";
 import img1 from "@/public/assets/banner/banner1.png";
 import img2 from "@/public/assets/banner/banner2.png";
 import img3 from "@/public/assets/banner/banner3.png";
-import Image from "next/image";
 import ProfileCard from "../Profile/MDProfile";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -67,7 +66,7 @@ const Banner = () => {
         <div className="">
           <div class="relative py-48 bg-black ">
             <div class="absolute inset-0 bg-black opacity-75">
-              <Image
+              <img
                 class="object-cover w-full h-full"
                 src={img3}
                 alt="Construction"

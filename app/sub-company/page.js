@@ -94,7 +94,7 @@ const SubCompany = () => {
 
                 <img
                   className="absolute -top-4 -left-12"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/features/1/wavey-lines.svg"
+                  src="https://cdn.rareblocks.xyz/collection/celebration/imgs/features/1/wavey-lines.svg"
                   alt=""
                 />
 
@@ -157,7 +157,7 @@ const SubCompany = () => {
             <div class="overflow-hidden bg-white rounded shadow">
                 <div class="p-8">
                     <div class="flex items-center">
-                        <img class="flex-shrink-0 w-12 h-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Kbce_BvHsHYJMs-Q6DWOQF9fovCZ7danZywkHYbXwBLbUuxfI31eZjhYt5VSc6-KDkw&usqp=CAU" alt="" />
+                        <img class="flex-shrink-0 w-12 h-auto" src="https://encrypted-tbn0.gstatic.com/imgs?q=tbn:ANd9GcQ_Kbce_BvHsHYJMs-Q6DWOQF9fovCZ7danZywkHYbXwBLbUuxfI31eZjhYt5VSc6-KDkw&usqp=CAU" alt="" />
                         <div class="ml-5 mr-auto">
                             <p class="text-xl font-semibold text-black">Waste Management</p>
                         </div>

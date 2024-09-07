@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import React from "react";
 import img1 from "@/public/assets/contact.jpg";
 import Link from "next/link";
@@ -9,7 +9,7 @@ const Page = () => {
       <section className="relative bg-gray-800 text-white">
         <div className="relative">
           <img
-            src="https://i.postimg.cc/dtKLsYHy/Whats-App-Image-2021-06-06-at-07-26-18.jpg"
+            src="https://i.postimg.cc/dtKLsYHy/Whats-App-img-2021-06-06-at-07-26-18.jpg"
             alt="Banner"
             className="object-cover w-full h-64 bg-black opacity-5"
           />

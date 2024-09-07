@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+
 import Link from "next/link";
 import { GoChevronDown } from "react-icons/go";
 import { MdOutlineFileDownload } from "react-icons/md";
@@ -70,7 +70,7 @@ const Nav = () => {
 <li className="lg:hidden">
 <details className="dropdown">
   <summary className="">Associates</summary>
-  <ul className="menu dropdown-content bg-base-300   z-[1] w-[80%]  shadow">
+  <ul className="menu dropdown-content bg-base-300   z-[1] w-[90%]  shadow">
     <li><Link href='/sub-company'>MAN Enterprise</Link></li>
     <li><a>MR.Drilling & Construction Ltd.</a></li>
   </ul>
@@ -85,11 +85,12 @@ const Nav = () => {
         <Link href="/projects">Projects</Link>
       </li>
 <li className="lg:hidden">
-<details className="dropdown">
+
+<details className="dropdown border-none">
   <summary className="">Equipment</summary>
-  <ul className="menu dropdown-content bg-base-300   z-[1] w-[80%]  shadow">
-    <li><Link href='/sub-company'>Equipment List</Link></li>
-    <li><a>Equipment Photos</a></li>
+  <ul className="menu dropdown-content bg-base-300  z-[1]  w-[90%]  shadow">
+    <li><Link href='/list-equipments'>Equipment List</Link></li>
+    <li><Link href='/photo-equipments'>Equipment Photos</Link></li>
   </ul>
 </details>
 </li>

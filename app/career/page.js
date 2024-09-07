@@ -1,6 +1,5 @@
 // app/career/page.tsx
 import Link from 'next/link';
-import Image from 'next/image';
 import img1 from '@/public/assets/banner/constraction.jpeg';
 
 const jobOpenings = [
@@ -19,7 +18,7 @@ export default function CareerPage() {
       {/* Hero Section */}
       <section className="relative bg-gray-800 text-white">
         <div className="relative">
-          <Image
+          <img
             src={img1}
             alt="Banner"
             className="object-cover w-full h-64 bg-black opacity-5"
@@ -67,38 +66,28 @@ export default function CareerPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {jobOpenings.map((job) => (
-              <div
-                key={job.id}
-                className="bg-gray-100 p-6 rounded-lg shadow-lg hover:bg-gray-200 transition"
-              >
-                <h3 className="text-2xl font-semibold mb-2">{job.title}</h3>
-                <p className="text-gray-600 mb-4">{job.location}</p>
-                <p className="text-gray-800 mb-4">{job.description}</p>
-                <Link href='/sub-career' className="btn">
-                  Details
-                </Link>
+              <div className="bg-white shadow-md rounded-lg p-6 mb-8">
+              <h2 className="text-3xl font-semibold mb-2">Structural Engineer</h2>
+              <p className="text-gray-600 mb-4">Construction Site - [Location]</p>
+              <div className="flex items-center mb-4">
+                <span className="inline-block bg-green-200 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full mr-2">Full-Time</span>
+                <span className="inline-block bg-yellow-200 text-yellow-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Immediate Start</span>
               </div>
+              <p className="text-gray-700 mb-6">
+                We are looking for a highly skilled Structural Engineer to join our team at a prominent construction site. You will be responsible for ensuring that structural designs are safe, stable, and suitable for the project requirements.
+              </p>
+
+              <Link href='/sub-career'>
+              <button className='btn bg-green-800 text-white hover:bg-green-600'>View Job Details</button>
+              
+              </Link>
+            </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <section className="py-16 bg-gray-800 text-white">
-        <div className="container mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to make an impact?</h2>
-          <p className="text-lg mb-8">
-            If you’re passionate about technology and eager to contribute to
-            exciting projects, we want to hear from you!
-          </p>
-          <a
-            href="#apply"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-blue-700"
-          >
-            Get In Touch
-          </a>
-        </div>
-      </section>
+   
     </div>
   );
 }

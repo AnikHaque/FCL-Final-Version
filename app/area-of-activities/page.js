@@ -1,6 +1,6 @@
 "use client";
 import img1 from "@/public/assets/banner/constraction.jpeg";
-import Image from "next/image";
+
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -10,46 +10,46 @@ const Activities = () => {
       title: "Building and Infrastructure, Energy, Gas and Power",
       description:
         "Farees Construction Limited's services are comprehensive. The staff includes engineers, architects, quantity surveyors, project managers, Construction experts & supervisors, material specialists, accountants, estimators, attorneys, and other experienced Construction professionals and skilled/semi-skilled/fresh workers to provide Construction services and value engineering.",
-      imageURL:
+      imgURL:
         "https://i.postimg.cc/Rhj1D6Kh/hello.jpg",
     },
     {
       title: "Water Supply & Water Resources Management",
       description:
         "Farees Construction Limited provides the full complement of engineering, Construction, and operations services in drinking water, wastewater, and water resources management to serve the needs of our public and private-sector clients.", 
-      imageURL: "https://i.postimg.cc/DwQQxzZf/7.jpg",
+      imgURL: "https://i.postimg.cc/DwQQxzZf/7.jpg",
     },
    
     {
       title: "Urban and Rural Area Resources Development",
       description:
         "Farees Construction Limited’s services are dedicated to providing disadvantaged urban and rural communities with sustainable development.",
-      imageURL: "https://i.postimg.cc/5yLX6kdb/20210607-174357-1.jpg",
+      imgURL: "https://i.postimg.cc/5yLX6kdb/20210607-174357-1.jpg",
     },
     {
       title: "Transportation and Communication",
       description:
         "Farees Construction Limited is a full-service engineering construction firm specializing in traffic engineering, transportation planning & modeling, traffic impact analysis, environmental and planning regulations, and municipal civil engineering construction. The company emphasizes site selection and land use, geotechnical investigations, improvement and reconstruction of roads, design and engineering of new roads, bridges and appurtenant structures, financial analysis, costing and tariffs, quality control of construction, and overall supervision.",
-      imageURL:
+      imgURL:
         "https://i.postimg.cc/cJWkXjBY/C-13.jpg",
     },
     {
       title: "Port, Harbor and River Training",
       description:
         "The firm has a focus on the port, harbor, and river training sector. Areas of specialization include surveying, monitoring, and mapping of rivers; flood/river control works, erosion control/soil conservation, dredging works; economic and financial analysis, among others.",
-      imageURL: "https://i.postimg.cc/tTcm9gFQ/picture.png",
+      imgURL: "https://i.postimg.cc/tTcm9gFQ/picture.png",
     },
     {
       title: "Industrial Development",
       description:
         "Having extensive technology management and business development experience in this field Farees Construction Limited offers Construction services in the areas of development strategy and functions and new product development, corporate venturing and technology planning.",
-      imageURL: "https://i.postimg.cc/15my8CqW/Cover.jpg",
+      imgURL: "https://i.postimg.cc/15my8CqW/Cover.jpg",
     },
     {
       title: "Information and Communication Technology",
       description:
         "Farees Construction Limited provides appropriately skilled man-power such as web designers, e-commerce specialists, analysts, designers, programmers, engineers, network administrators, communication experts, database administrators, project managers and many other IT related individuals.",
-      imageURL:
+      imgURL:
         "https://i.postimg.cc/Ss6MVTVX/2.jpg",
     },
   ];
@@ -154,7 +154,7 @@ const Activities = () => {
                 <div className="py-10 px-9">
                   <img
                     className="relative object-cover w-full h-64"
-                    src={activity.imageURL}
+                    src={activity.imgURL}
                     alt={activity.title}
                   />
                   <h3 className="mt-8 text-lg font-semibold text-black">
@@ -175,7 +175,7 @@ const Activities = () => {
 
       {selectedActivity && (
         <dialog open className="modal ">
-          <div className="modal-box bg-green-200">
+          <div className="modal-box bg-green-400">
             <form method="dialog">
               <button
                 className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 "
@@ -186,7 +186,7 @@ const Activities = () => {
             </form>
             <img
               className="relative object-cover w-full h-64 mb-4 mt-4"
-              src={selectedActivity.imageURL}
+              src={selectedActivity.imgURL}
               alt={selectedActivity.title}
             />
             <h3 className="font-bold text-lg">{selectedActivity.title}</h3>
