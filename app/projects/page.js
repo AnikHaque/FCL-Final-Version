@@ -12,12 +12,7 @@ const Project = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const projects = [
-    {
-      name: 'PSO Banglow, Dhaka Cantonment.',
-      category: 'Construction',
-      backgroundimg:
-        'https://fclweb.netlify.app/_next/img?url=%2F_next%2Fstatic%2Fmedia%2FPOS.36e2fcb0.png&w=1920&q=75',
-    },
+   
     {
       name: '7.5 km Flexible Road’s Pavement',
       category: 'Construction',
@@ -48,12 +43,7 @@ const Project = () => {
       category: 'Construction',
       backgroundimg: 'https://i.postimg.cc/gjCG74vx/IMG20200408164436.jpg',
     },
-    {
-      name: 'PSO Banglow, Dhaka Cantonment.',
-      category: 'Construction',
-      backgroundimg:
-        'https://fclweb.netlify.app/_next/img?url=%2F_next%2Fstatic%2Fmedia%2FPOS.36e2fcb0.png&w=1920&q=75',
-    },
+    
     // Add other projects here
   ];
 
