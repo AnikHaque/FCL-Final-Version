@@ -1,29 +1,10 @@
 import "./Brand.css";
-import brand1 from "@/public/assets/company/army_logo.svg";
-import brand2 from "@/public/assets/company/BUP_logo.png";
-import brand3 from "@/public/assets/company/airforce_logo.png";
-import brand4 from "@/public/assets/company/navy_logo.png";
-import brand5 from "@/public/assets/company/mes.svg";
-import brand6 from "@/public/assets/company/bgb.png";
-import brand7 from "@/public/assets/company/jolshiri.png";
-import brand8 from "@/public/assets/company/blade.jpeg";
-import brand9 from "@/public/assets/company/BSEC.png";
-import brand10 from "@/public/assets/company/suez.jpg";
-import brand11 from "@/public/assets/company/menard.png";
-import brand12 from "@/public/assets/company/Freyssinet.webp";
-import brand13 from "@/public/assets/company/amt.jpg";
-import brand14 from "@/public/assets/company/Rosatom_logo.png";
-import brand15 from "@/public/assets/company/bauer.png";
-import brand16 from "@/public/assets/company/trest.jpeg";
-import brand17 from "@/public/assets/company/dhaSouth.png";
-import brand18 from "@/public/assets/company/kec.jpg";
-import brand19 from "@/public/assets/company/karnofuly.png";
-import brand20 from "@/public/assets/company/wasa.svg";
+
 
 const Company = () => {
   return (
     <div className=" bg-slate-50 py-20 mb-20">
-      <h3 className="text-center mb-10 text-2xl font-bold">
+      <h3 className="text-center mb-10 text-2xl lg:text-4xl font-bold">
         Our Valuable Clients
       </h3>
       <div className="carousel-wrapper mb-5 container mx-auto max-w-[1300px]">
@@ -31,140 +12,140 @@ const Company = () => {
           <div className="carousel-item">
             <img
               className="w-20  h-20 rounded-full hover:saturate-0"
-              src={brand1}
+              src='https://i.postimg.cc/FKpGqTG6/airforce-logo.png'
               alt="Brand 1"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand2}
+              src='https://i.postimg.cc/d3kBhwvM/amt.jpg'
               alt="Brand 2"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand3}
+              src='https://i.postimg.cc/0QHn5rTd/army-logo.png'
               alt="Brand 3"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand4}
+              src='https://i.postimg.cc/tTgDHFM4/bauer.png'
               alt="Brand 5"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand5}
+              src='https://i.postimg.cc/ryDX14wT/bgb.png'
               alt="Brand 6"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand6}
+              src='https://i.postimg.cc/ryDX14wT/bgb.png'
               alt="Brand 7"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand7}
+              src='https://i.postimg.cc/3rzMnwkv/blade.jpg'
               alt="Brand 10"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand8}
+              src='https://i.postimg.cc/1XkK6258/BSEC.png'
               alt="Brand 12"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand9}
+              src='https://i.postimg.cc/3JGs6HGb/BUP-logo.png'
               alt="Brand 8"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand10}
+              src='https://i.postimg.cc/6pNkx1L6/dhaSouth.png'
               alt="Brand 13"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand11}
+              src='https://i.postimg.cc/pLYgWYqf/Freyssinet.webp'
               alt="Brand 14"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand12}
+              src='https://i.postimg.cc/9fmsrRnv/jolshiri.jpg'
               alt="Brand 17"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand13}
+              src='https://i.postimg.cc/KY0wLcX4/jolshiri.png'
               alt="Brand 18"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand14}
+              src='https://i.postimg.cc/Y9jVxckR/karnofuly.png'
               alt="Brand 13"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand15}
+              src='https://i.postimg.cc/L4YwYMx6/kec.jpg'
               alt="Brand 14"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand16}
+              src='https://i.postimg.cc/k4ZH1jgm/menard.png'
               alt="Brand 17"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand17}
+              src='https://i.postimg.cc/L8Rbbg2n/mes.png'
               alt="Brand 18"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand18}
+              src='https://i.postimg.cc/yxZbwFDS/navy-logo.png'
               alt="Brand 14"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand19}
+              src='https://i.postimg.cc/65CPcfsk/Rosatom-logo.png'
               alt="Brand 17"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand20}
+              src='https://i.postimg.cc/3wxbKMyh/wasa.png'
               alt="Brand 18"
             />
           </div>
@@ -172,143 +153,143 @@ const Company = () => {
       </div>
       <div className="carousel-wrapper container mx-auto max-w-[1300px]">
         <div className="carousel-container carousel-container-2 flex flex-row-reverse">
-          <div className="carousel-item">
+        <div className="carousel-item">
             <img
-              className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand1}
+              className="w-20  h-20 rounded-full hover:saturate-0"
+              src='https://i.postimg.cc/FKpGqTG6/airforce-logo.png'
               alt="Brand 1"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand2}
+              src='https://i.postimg.cc/d3kBhwvM/amt.jpg'
               alt="Brand 2"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand3}
+              src='https://i.postimg.cc/0QHn5rTd/army-logo.png'
               alt="Brand 3"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand4}
+              src='https://i.postimg.cc/tTgDHFM4/bauer.png'
               alt="Brand 5"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand5}
+              src='https://i.postimg.cc/ryDX14wT/bgb.png'
               alt="Brand 6"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand6}
+              src='https://i.postimg.cc/ryDX14wT/bgb.png'
               alt="Brand 7"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand7}
+              src='https://i.postimg.cc/3rzMnwkv/blade.jpg'
               alt="Brand 10"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand8}
+              src='https://i.postimg.cc/1XkK6258/BSEC.png'
               alt="Brand 12"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand9}
+              src='https://i.postimg.cc/3JGs6HGb/BUP-logo.png'
               alt="Brand 8"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand10}
+              src='https://i.postimg.cc/6pNkx1L6/dhaSouth.png'
               alt="Brand 13"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand11}
+              src='https://i.postimg.cc/pLYgWYqf/Freyssinet.webp'
               alt="Brand 14"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand12}
+              src='https://i.postimg.cc/9fmsrRnv/jolshiri.jpg'
               alt="Brand 17"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand13}
+              src='https://i.postimg.cc/KY0wLcX4/jolshiri.png'
               alt="Brand 18"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand14}
+              src='https://i.postimg.cc/Y9jVxckR/karnofuly.png'
               alt="Brand 13"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand15}
+              src='https://i.postimg.cc/L4YwYMx6/kec.jpg'
               alt="Brand 14"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand16}
+              src='https://i.postimg.cc/k4ZH1jgm/menard.png'
               alt="Brand 17"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand17}
+              src='https://i.postimg.cc/L8Rbbg2n/mes.png'
               alt="Brand 18"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand18}
+              src='https://i.postimg.cc/yxZbwFDS/navy-logo.png'
               alt="Brand 14"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand19}
+              src='https://i.postimg.cc/65CPcfsk/Rosatom-logo.png'
               alt="Brand 17"
             />
           </div>
           <div className="carousel-item">
             <img
               className="w-20 h-20 rounded-full hover:saturate-0"
-              src={brand20}
+              src='https://i.postimg.cc/3wxbKMyh/wasa.png'
               alt="Brand 18"
             />
           </div>
