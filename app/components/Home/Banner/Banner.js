@@ -68,7 +68,7 @@ const Banner = () => {
             <div class="absolute inset-0 bg-black opacity-75">
               <img
                 class="object-cover w-full h-full"
-                src={img3}
+                src='https://i.postimg.cc/WbsmRGqL/banner3.png'
                 alt="Construction"
               />
             </div>
